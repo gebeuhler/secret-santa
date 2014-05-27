@@ -5,10 +5,10 @@ public class RunSecretSanta
 		final String[] participants = new String[] { "Kyle", "Kenny", "Eric", "Stan", "Stewie", "Brian" };
 		String[] assignments = secretSanta.generateAssignments(participants);
 
-		System.out.println("Assignments\n=============");
+		System.out.println("\nAssignments\n=============================");
 
-		for(String person : assignments){
-			System.out.println(person);
+		for(int i = 0; i < participants.length;i++){
+			System.out.println(participants[i] + " is assigned to " + assignments[i] + "!");
 		}
 	}
 }
