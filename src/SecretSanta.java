@@ -32,12 +32,4 @@ public class SecretSanta
 		}
 		return true;
 	}
-
-	/*
-	final String[] participants = new String[] { "Kyle", "Kenny", "Eric", "Stan",
-	"Stewie", "Brian" };
-	final String[] assignments = generateAssignments(participants);
-	// Sample result: { "Eric", "Stewie", "Brian", "Kenny", "Kyle", "Stan" } 
-	*/
-
 }
