@@ -27,7 +27,7 @@ public class SecretSanta
 	 */
 	private boolean hasDuplicateOrder(String[] participants, String[] assignments){
 		for(int i = 0; i < participants.length; i++){
-			if(participants[i] == assignments[i])
+			if(participants[i].equals(assignments[i]))
 				return false;
 		}
 		return true;

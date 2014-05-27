@@ -29,10 +29,19 @@ Package everything as a complete project. Compress the package into one file the
 
 Optional: Implement at least 2 algorithms/implementations. Use your judgement on how to design it.
 
+
 To compile program:
 
 javac src/*.java -d bin
 
-To run program interpreter style:
+To run program:
 
 java -cp bin RunSecretSanta
+
+To compile tests:
+
+javac -cp lib/*:src test/*.java -d bin
+
+To run tests:
+
+java -cp lib/*:bin TestRunner
