@@ -6,12 +6,12 @@ import org.junit.*;
 
 public class TestSecretSanta{
 	@BeforeClass
-	public static void testSetup() {
+	public static void testSetup(){
 		
 	}
 
 	@AfterClass
-	public static void testCleanup() {
+	public static void testCleanup(){
 	    // Teardown for data used by the unit tests
 	}
 

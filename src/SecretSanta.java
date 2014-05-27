@@ -8,7 +8,7 @@ public class SecretSanta{
 	 * with assignments[0], participants[1] is matched with assignments[1], 
 	 *	and so on.
 	 */
-	public String[] generateAssignments(final String[] participants) {
+	public String[] generateAssignments(final String[] participants){
 		String[] assignments = new String[participants.length];
 		System.arraycopy(participants, 0, assignments, 0, assignments.length);
 
