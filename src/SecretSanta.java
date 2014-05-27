@@ -15,7 +15,7 @@ public class SecretSanta
 
 		do{		
 			Collections.shuffle(Arrays.asList(assignments));
-		} while(!hasDuplicateOrder(participants, assignments));
+		} while(!hasSelfAssignment(participants, assignments));
 
 		return assignments;
 	}
@@ -25,7 +25,7 @@ public class SecretSanta
 	 * @param list of assignments
 	 * @return false if a person is assigned to himself and the array must be reshuffled;true otherwise
 	 */
-	private boolean hasDuplicateOrder(String[] participants, String[] assignments){
+	private boolean hasSelfAssignment(String[] participants, String[] assignments){
 		for(int i = 0; i < participants.length; i++){
 			if(participants[i].equals(assignments[i]))
 				return false;
