@@ -1,8 +1,7 @@
 import java.util.Arrays;
 import java.util.Collections;
 
-public class SecretSanta
-{
+public class SecretSanta{
 	/**
 	 * @param participants list of individuals participating in the draw.
 	 * @return the list of individuals paired with the participants where participants[0] is matched
