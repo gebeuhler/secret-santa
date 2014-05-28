@@ -25,7 +25,7 @@ Unit tests are not required but a big, big plus.
 
 Include any build scripts, dependency management configuration files, etc.
 
-Package everything as a complete project. Compress the package into one file then send it back to the GoHealth Technical Recruiter.
+Package everything as a complete project. Compress the package into one file then send it back
 
 Optional: Implement at least 2 algorithms/implementations. Use your judgement on how to design it.
 
