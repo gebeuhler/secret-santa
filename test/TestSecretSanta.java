@@ -1,22 +1,18 @@
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertFalse;
 
 import org.junit.*;
 
+import java.util.Arrays;
+
 public class TestSecretSanta{
-	@BeforeClass
-	public static void testSetup(){
-		
-	}
 
-	@AfterClass
-	public static void testCleanup(){
-	    // Teardown for data used by the unit tests
-	}
+    final String[] participants = new String[] { "Kyle", "Kenny", "Eric", "Stan", "Stewie", "Brian" };
+    SecretSanta secretSanta = new SecretSanta();
 
+    //Verify input and output arrays are different
 	@Test
-	public void testStuff(){
-
+	public void testSorting(){
+        String[] assignments = secretSanta.generateAssignments(participants);
+        assertFalse(Arrays.equals(participants,assignments));
 	}
 }
