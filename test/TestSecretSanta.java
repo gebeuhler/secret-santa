@@ -9,10 +9,17 @@ public class TestSecretSanta{
     final String[] participants = new String[] { "Kyle", "Kenny", "Eric", "Stan", "Stewie", "Brian" };
     SecretSanta secretSanta = new SecretSanta();
 
-    //Verify input and output arrays are different
+    /**
+     * Test one randomized set of participants
+     */
 	@Test
-	public void testSorting(){
-        String[] assignments = secretSanta.generateAssignments(participants);
+	public void testGeneration(){
+        final String[] assignments = secretSanta.generateAssignments(participants);
         assertFalse(Arrays.equals(participants,assignments));
 	}
+
+    @Test
+    public void testSelfAssignment(){
+
+    }
 }
